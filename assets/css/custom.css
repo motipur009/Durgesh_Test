@@ -1,0 +1,209 @@
+@charset "utf-8";
+@import url("animate.css");
+@import url("sticky_header.css");
+@import url("fonts.css");
+/* CSS Document */
+body{font-family: 'Proxima Nova'; font-size:15px; color:#444}
+a{color:#222}
+a:hover{color:#000; text-decoration:none}
+a:visited, a:active, a:focus{text-decoration:none!important}
+.pointer{cursor:pointer}
+.hero-banner{background:url(../images/hero-banner.jpg) center no-repeat; background-size: cover; position: relative}
+.intro{position: absolute; top: 25%; width: inherit}
+.intro h1{font:normal 38px/40px 'proxima_nova_altbold'; color:#fff; margin-bottom:0; padding-bottom:0}
+.intro h1 span{text-decoration:underline}
+.intro h3{font:normal 20px/30px 'proxima_nova_altbold'; color:#fff; margin-bottom:20px}
+section.ticker{background:#000; color:#fec030; padding:30px 0; font:normal 24px/30px 'proxima_nova_altbold' }
+section.features{padding:50px 0;}
+section.features h6{font:normal 15px 'proxima_nova_altbold'; text-transform:uppercase}
+section.features p{color:#999}
+section.top-destinations{background:#f0f0f0; padding:50px 0;}
+section.top-destinations h2{font:normal 28px/38px 'proxima_nova_altbold'; color:#000;}
+.category{padding:10px 0 30px;}
+.category .cat-item{background:#fff; text-align:center; padding:15px 0; box-shadow:0 0 5px rgba(0,0,0,0.3); border-radius:2px; transition:all ease 0.3s}
+.category .cat-item small{display:block;}
+.category .cat-item:hover{background:#cd3333; color:#fff;}
+
+.destination{background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.3); border-radius:2px;}
+.destination img.liquid{border-radius:2px 2px 0 0}
+img.liquid{width:100%; height:auto;}
+.destination-desc{padding:15px}
+.destination-desc h6{font:normal 15px 'proxima_nova_altbold'}
+.destination-desc:hover h6 a{color:#cd3333}
+.destination-desc h6 a:hover{text-decoration:none;}
+
+.destination-desc ul li{width:25%}
+.destination-desc ul li small{display:block; color:#999; font-size:13px}
+section .btn-wrapper{padding:50px 0 0 0;}
+
+section.footer-band-about{background:url(../images/about-bg.jpg) center no-repeat; background-size:cover; padding:40px; color:#999}
+section.footer-band-about small{display:block; font-size:13px;}
+section.footer-band-about h6{color:#fff; font:normal 20px 'proxima_nova_altbold'; text-transform:uppercase}
+section.footer-band-about h6 span{color:#cd3333;}
+section.footer-band-about h5 a{font:normal 16px 'proxima_nova_altbold'; color:#999; transition:all ease 0.3s}
+section.footer-band-about h5 a:hover{color:#fff}
+section.footer-band-about input[type="text"]{background:#777; color:#fff; line-height:37px; height:37px; width:100%; padding:0 10px; box-sizing:border-box; border:none; margin-bottom:10px}
+section.footer-band-about input[type="submit"]{font:normal 14px 'proxima_nova_altbold'; background:#cd3333; color:#e7adad; line-height:37px; height:37px; padding:0 10px; box-sizing:border-box; border:none; position:absolute; right:15px; transition:all ease 0.3s }
+section.footer-band-about input[type="submit"]:hover{color:#fff}
+section.footer-band-nav{padding:50px 0;}
+section.footer-band-nav h6{font:normal 15px 'proxima_nova_altbold'; margin:0}
+section.footer-band-nav ul{margin:0; padding:0;}
+section.footer-band-nav ul li{list-style:none; font-size:13px;}
+section.footer-band-nav ul li a{color:#999; transition:all ease 0.3s}
+section.footer-band-nav ul li a:hover{color:#000; text-decoration:underline}
+.certications{margin:40px 0; padding:20px 0; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+.ic-cat{width:48px; height:48px; display:inline-block; background-image:url(../images/cat-icon.png); background-repeat:no-repeat;}
+.ic-cat.photography{background-position:0 top}
+.ic-cat.family{background-position: -48px top}
+.ic-cat.friends{background-position: -96px top}
+.ic-cat.romantic{background-position:-144px top}
+.ic-cat.nature{background-position:-192px top}
+.ic-cat.posh{background-position:-240px top}
+.category .cat-item:hover .ic-cat.photography{background-position:0 bottom}
+.category .cat-item:hover .ic-cat.family{background-position: -48px bottom}
+.category .cat-item:hover .ic-cat.friends{background-position: -96px bottom}
+.category .cat-item:hover .ic-cat.romantic{background-position:-144px bottom}
+.category .cat-item:hover .ic-cat.nature{background-position:-192px bottom}
+.category .cat-item:hover .ic-cat.posh{background-position:-240px bottom}
+ul.social{padding-top:10px;}
+ul.social li a{padding:9px 10px; background:#999; border-radius:20px; display:inline-block; text-align:center; transition:all ease 0.3s}
+ul.social li a:hover{background:#cd3333;}
+ul.social li a img{width:20px; height:20px;}
+
+
+.menu{position:absolute; top:40px; right:15px; display:inline-block; color:#fff; font-size: 15px; padding:8px 10px 4px; border:1px solid #fff; border-radius:2px; cursor:pointer; transition:all ease 0.3s; display:none}
+.menu:hover, .menu.active{color:#fff; border:1px solid #cd3333; background:#cd3333}
+
+.booking-nav {
+  background-color: rgb(0, 0, 0,0.6);
+  height: 65px; color:#fff;
+}
+.booking-form-wrapper{background:#fff; padding:15px;}
+.flight-type label{float:left}
+/* The radio */
+.radio {
+ 
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+	margin-top:0;
+	margin-right:19px;
+    cursor: pointer;
+    font:normal 15px 'proxima_nova_altbold'; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkround {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff ;
+    border-color:#cd3333;
+    border-style:solid;
+    border-width:2px;
+     border-radius: 50%;
+}
+.checkbox + .checkbox, .radio + .radio {
+    margin-top: 0;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkround {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkround:after {
+    content: "";
+    position: absolute;
+    display: none;
+	
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkround:after {
+    display: block;
+	border-width:4px;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkround:after {
+     left: -1px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background:#cd3333;
+    
+ 
+}
+.f-block{border:1px solid #ddd; padding:5px 10px; margin:5px 0; text-align:left}
+.f-block small{font:normal 11px/15px 'proxima_nova_altbold'; padding:0; margin:0; color:#cd3333; text-transform:uppercase;display:inherit;}
+.f-block input[type="text"], .f-block input[type="date"]{border:none; padding:0 0 0 20px; box-sizing:border-box; background-size:16px 16px;}
+input.ic-loation{background:url(../images/ic-location.png) left center no-repeat}
+input.ic-calendar{background:url(../images/ic-calendar.png) left center no-repeat}
+.booking-form button{width:100%; border:none; background:#cd3333; color:#fff; height:48px; margin-top:5px;}
+.passenger-info{padding:12px 0 11px 20px; font:normal 15px/15px 'proxima_nova_altbold'; background:url(../images/ic-passenger.png) left center no-repeat;  background-size:16px 16px;}
+.booking-nav ul{padding-left:5px;}
+.booking-nav ul li{list-style-type:none; margin:0; padding:0;}
+.booking-nav ul li a{padding:0 15px; font:normal 16px/65px 'proxima_nova_altbold'; color:#fff; display:block;}
+.booking-nav ul li a:hover, .booking-nav ul li a.active{color:#000; background:#fff}
+.coupon-wrapper{padding:15px; line-height:35px;}
+.coupon-wrapper strong{border:dashed 3px #fec030; color:#fec030; background:#000; margin-right:10px; font:normal 16px/35px 'proxima_nova_altbold'; display:inline-block; padding:0 20px;}
+.advance-option{font:normal 16px/30px 'proxima_nova_altbold'; color:#333; margin-top:5px}
+.advance-option-wrapper{margin-top:5px;}
+.advance-option-wrapper .checkbox{margin-left:15px;}
+.passenger-info-wrapper{ position:absolute; left:15px; border:1px solid #ddd; z-index:99; padding:0 15px; background:#fff;}
+.passenger-info-wrapper select{width:100%}
+.passenger-info-wrapper .fs{margin:15px 0;}
+.passenger-info-wrapper .fs:first-child{border-bottom:1px solid #ddd; padding-bottom:15px}
+.passenger-info-wrapper .fs label{margin-top:10px; font-size:12px;} 
+.contact-info{position:absolute; right:4%; top:-5px;}
+.contact-info a{font-size:12px!important; color:#fec030}
+.add-city{display:inline-block; text-align:left; font-faight:bold; color:#cd0000; float:left}
+
+
+
+
+.panel-flyout{display:none;}
+.visible-on-mobile{display:none}
+.visible-on-desktop{display:block}
+
+@media only screen and (max-width: 640px) {
+	.visible-on-mobile{display:block}
+	.visible-on-desktop{display:none}
+	.menu{display:block; top:15px;}
+	.menu-items{position:absolute; left:0; top:104px; width:100%;; display:none;}
+	.menu-items a{display:block; text-align:left; background:rgba(0,0,0,0.75)}
+	.menu-items a:hover{background:rgba(0,0,0,1)}
+	.footer {font-size: 8px;}
+	.logo{text-align:left}
+	.logo img{width:80%; text-align:left}
+	.float-panel {width: 100%; background: #000; z-index: 300; padding: 5px 0; transform: translateZ(0); transition: all 0.5s; border-bottom: 2px solid rgba(255,255,255,0.1);}
+	.float-panel a {padding:0 10px;}
+	.hero-banner{background:#cd3333}
+	.intro {top: 100%; position:static}
+	.booking-nav{height:50px;}
+	.booking-nav ul li a{line-height:50px; padding:0 10px; font-size:14px;}
+	.passenger-info-wrapper .fs {margin: 5px 0;}
+	.passenger-info-wrapper {position: static; background:#fafafa; margin-bottom:15px; padding-bottom:10px}
+	.passenger-info-wrapper .fs label { margin-top: 0px;}
+	.passenger-info-wrapper .form-group { margin-bottom: 0px;}
+	.contact-info {position:static; right:0; bottom:0; height:50px; z-index: 999;  background: #fec030;; width: 100%; padding: 0px 10px; text-align:center;}
+	.contact-info a{display:inline-block; color:#000;  font-size:13px!important; line-height:50px; padding:0 2px; font-weight:bold}
+	}

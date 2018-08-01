@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FareExpeditions.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Custom Files start here-->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/controls.js"></script>
+    <!-- Custom Files end here-->
+    <!-- Sticky header & footer start here-->
+    <script src="assets/js/float-panel.js"></script>
+    <!-- Sticky header & footer end here-->
+    <!-- wow JS integration Starts here -->
+    <script src="assets/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <!-- wow JS integration ends here -->
+    <!-- Font Awesome Script starts here -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Font Awesome Script ends here -->
+
+</head>
+<body>
+    <!-- Back to top button starts here -->
+    <div id="backtop">&#9650;</div>
+    <!-- Back to top button starts here -->
+    <div class="contact-info visible-on-mobile">
+        <a href="tel:+918662803115"><i class="fas fa-phone"></i> 0866 280 3115</a>
+        <a href="mailto:info@fareexpeditions.com"><i class="fas fa-envelope"></i> info@fareexpeditions.com</a>
+    </div>
+    <div class="content">
+        <div class="content-inside">
+            <div class="container-fluid">
+                <div class="row">
+                    <section class="hero-banner">
+                        <div class="float-panel" data-top="0" data-scroll="100">
+                            <div class="content-area" style="text-align:right;">
+                                <a href="#" style="float:left;" class="logo"> <img src="assets/images/logo.png" alt="Fare Expeditions" /> </a>
+                                <div class="contact-info visible-on-desktop">
+                                    <a href="tel:+918662803115"><i class="fas fa-phone"></i> 0866 280 3115</a>
+                                    <a href="mailto:info@fareexpeditions.com"><i class="fas fa-envelope"></i> info@fareexpeditions.com</a>
+                                </div>
+                                <div class="menu-items"> <a href="#">FLIGHTS</a> <a href="#">HOTEL</a> <a href="#">CAR</a> <a href="#">PACKAGE</a> <a href="#">REGISTER</a> <a href="#">LOGIN</a> </div>
+                                <div class="menu"> <span class="glyphicon glyphicon-menu-hamburger"></span> </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="intro text-center">
+                                <h1 class="visible-on-desktop">Plan your vacation. Its easy and safe.</h1>
+                                <h3 class="visible-on-desktop">Compare & Book over 650 Airlines &#8226; Get Instant Confirmation &#8226; Get the Best Seats</h3>
+                                <div class="row booking-wrapper">
+                                    <div class="booking-nav">
+                                        <div class="pull-left">
+                                            <ul class="list-inline">
+                                                <li><a href="#" class="active"><i class="fas fa-plane"></i> Flight</a></li>
+                                                <li><a href="#"><i class="fas fa-h-square"></i> Hotel</a></li>
+                                                <li><a href="#"><i class="fas fa-car"></i> Cars</a></li>
+                                                <li><a href="#"><i class="fas fa-suitcase"></i> Package</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pull-right coupon-wrapper visible-on-desktop"> <strong>VACATION20</strong> <small>Use Coupon Code & Save up to $20.</small> </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="booking-form-wrapper">
+                                        <div class="flight-type">
+                                            <!--Radio group-->
+                                            <label class="radio round-trip">
+                                                Round Trip
+                                                <input type="radio" checked="checked" name="flight-type">
+                                                <span class="checkround"></span>
+                                            </label>
+                                            <label class="radio one-way">
+                                                One Way
+                                                <input type="radio" name="flight-type">
+                                                <span class="checkround"></span>
+                                            </label>
+                                            <!--Radio group-->
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="booking-form" id="booking_form">
+                                            <div class="dynamic-booking-form">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <div class="f-block">
+                                                            <small>From</small>
+                                                            <input type="text" class="ic-loation">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="f-block">
+                                                            <small>To</small>
+                                                            <input type="text" class="ic-loation">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 depart-date">
+                                                        <div class="f-block">
+                                                            <small>Depart</small>
+                                                            <input type="date" data-provide="datepicker" class="ic-calendar">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 return-date">
+                                                        <div class="f-block">
+                                                            <small>Return</small>
+                                                            <input type="date" data-provide="datepicker" class="ic-calendar">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 panel-box">
+                                                        <div class="f-block panel-trigger">
+                                                            <div class="passenger-info">
+                                                                <div class="pull-left ic-passenger">1 Traveler, Coach</div>
+                                                                <div class="pull-right"><span class="caret"></span></div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel-flyout passenger-info-wrapper">
+                                                            <div class="row">
+                                                                <div class="flight-class">
+                                                                    <div class="fs">
+                                                                        <div class="col-md-4 text-left"><label>Coach</label></div>
+                                                                        <div class="col-md-8 text-right">
+                                                                            <select class="form-control">
+                                                                                <option>Coach</option>
+                                                                                <option>Premium Economy</option>
+                                                                                <option>Business</option>
+                                                                                <option>First</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="fs">
+                                                                        <div class="col-md-6 text-left"><label>Adult</label></div>
+                                                                        <div class="col-md-6 text-right">
+                                                                            <div class="form-inline">
+                                                                                <div class="form-group passenger-count">
+                                                                                    <label class="sr-only" for="exampleInputAdult">Adult</label>
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon decrease pointer">-</div>
+                                                                                        <input type="text" class="form-control text-center passengerfield" id="adult-passenger" placeholder="0">
+                                                                                        <div class="input-group-addon increase pointer">+</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="fs">
+                                                                        <div class="col-md-6 text-left"><label>Seniors (65+) </label></div>
+                                                                        <div class="col-md-6 text-right">
+                                                                            <div class="form-inline">
+                                                                                <div class="form-group passenger-count">
+                                                                                    <label class="sr-only" for="exampleInputSeniors">Seniors (65+)</label>
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon decrease pointer">-</div>
+                                                                                        <input type="text" class="form-control text-center passengerfield" id="senior-passenger" placeholder="0">
+                                                                                        <div class="input-group-addon increase pointer">+</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                    <div class="fs">
+                                                                        <div class="col-md-6 text-left"><label>Children (Infant-11)</label></div>
+                                                                        <div class="col-md-6 text-right">
+                                                                            <div class="form-inline">
+                                                                                <div class="form-group passenger-count">
+                                                                                    <label class="sr-only" for="exampleInputChild">Children (Infant-11)</label>
+                                                                                    <div class="input-group">
+                                                                                        <div class="input-group-addon decrease pointer" ">-</div>
+                                                                                        <input type="text" class="form-control text-center passengerfield" id="Child-passenger" placeholder="0">
+                                                                                        <div class="input-group-addon increase pointer">+</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+
+
+
+
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 search-flight">
+                                                        <button class="btn-block"><span class="glyphicon glyphicon-search visible-on-desktop"></span><strong class="visible-on-mobile">SEARCH</strong></button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="add-city pointer">[+] Add Flight</div>
+                                            <div class="clearfix"></div>
+                                            <div class="text-left panel-box">
+                                                <div class="advance-option">
+                                                    <div class="panel-trigger pull-left pointer">
+                                                        Advance Options <span class="caret"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="panel-flyout advance-option-wrapper">
+                                                    <form class="form-inline" action="">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" id="Preferred_Airlines" placeholder="Preferred Airlines">
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox">
+                                                                Return to or from another city/airport?
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox">
+                                                                Direct flights only
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="ticker  wow bounceInUp visible-on-desktop">
+                        <div class="container text-center"> <i class="fas fa-phone-volume"></i> Call us for Unpublished budgeted fares +1-800-213-1309 </div>
+                    </section>
+                    <section class="features wow bounceInUp visible-on-desktop">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-3">
+                                    <h5><img src="assets/images/ic-savings.svg" alt="" height="32" width="auto"></h5>
+                                    <h6>Save big with us</h6>
+                                    <p>We offer affordable flight deals to our customers.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5><img src="assets/images/ic-support.svg" alt="" height="32" width="auto"></h5>
+                                    <h6>24/7 Customer Support </h6>
+                                    <p>Our customer executives are efficient and highly professional.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5><img src="assets/images/ic-best-price.svg" alt="" height="32" width="auto"></h5>
+                                    <h6>Best Price Guarantee</h6>
+                                    <p>Our best price available on worldwide destinations.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h5><img src="assets/images/ic-safety.svg" alt="" height="32" width="auto"></h5>
+                                    <h6>Trust & Safety</h6>
+                                    <p>Don't worry about the payment as it is completely safe and secure.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="top-destinations wow bounceInUp visible-on-desktop">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-head text-center">
+                                    <h2>TOP DESTINATION DEALS</h2>
+                                    <p>Travel packages for every budget. Which one is yours?</p>
+                                </div>
+                                <div class="category">
+                                    <div class="col-md-2 text-center">
+                                        <div class="cat-item pointer"> <span class="ic-cat photography"></span> <small>Photogprahy</small> </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="cat-item pointer"> <span class="ic-cat family"></span> <small>Family</small> </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="cat-item pointer"> <span class="ic-cat friends"></span> <small>Friends</small> </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="cat-item pointer"> <span class="ic-cat romantic"></span> <small>Romantic</small> </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="cat-item pointer"> <span class="ic-cat nature"></span> <small>Nature</small> </div>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <div class="cat-item pointer"> <span class="ic-cat posh"></span> <small>Posh</small> </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="destination-wrapper">
+                                    <div class="col-md-3">
+                                        <div class="destination text-center">
+                                            <img src="assets/images/thumb-destination.png" class="liquid" width="254" height="184" alt="">
+                                            <div class="destination-desc">
+                                                <h6><a href="#">Eastern European architectural building tours</a></h6>
+                                                <ul class="list-inline">
+                                                    <li> <img src="assets/images/ic-flight.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-hotel.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-transport.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="destination text-center">
+                                            <img src="assets/images/thumb-destination.png" class="liquid" width="254" height="184" alt="">
+                                            <div class="destination-desc">
+                                                <h6><a href="#">Eastern European architectural building tours</a></h6>
+                                                <ul class="list-inline">
+                                                    <li> <img src="assets/images/ic-flight.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-hotel.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-transport.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="destination text-center">
+                                            <img src="assets/images/thumb-destination.png" class="liquid" width="254" height="184" alt="">
+                                            <div class="destination-desc">
+                                                <h6><a href="#">Eastern European architectural building tours</a></h6>
+                                                <ul class="list-inline">
+                                                    <li> <img src="assets/images/ic-flight.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-hotel.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-transport.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="destination text-center">
+                                            <img src="assets/images/thumb-destination.png" class="liquid" width="254" height="184" alt="">
+                                            <div class="destination-desc">
+                                                <h6><a href="#">Eastern European architectural building tours</a></h6>
+                                                <ul class="list-inline">
+                                                    <li> <img src="assets/images/ic-flight.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-hotel.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                    <li> <img src="assets/images/ic-transport.png" width="20" height="20" alt=""> <small>$ 59</small> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="btn-wrapper text-center"> <a href="#" class="btn btn-danger btn-lg">SEE ALL TOURS</a> </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer-band-about visible-on-desktop">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 wow fadeInLeft">
+                                    <h6><span>Fare</span>Expeditions.com</h6>
+                                    <p>Affordable Bookings is offering great deals on flights tickets, hotel reservations, car rental and sightseeing tours. Keep checking for the latest updates.</p>
+                                    <ul class="list-inline social">
+                                        <li><a href="#"><img src="assets/images/ic-fb.png" width="30" height="30" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/images/ic-twitter.png" width="30" height="30" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/images/ic-pinterest.png" width="30" height="30" alt=""></a></li>
+                                        <li><a href="#"><img src="assets/images/ic-insta.png" width="30" height="30" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3  wow fadeInRight">
+                                    <h6>SuBscribe</h6>
+                                    <input type="text" placeholder="Enter your Email">
+                                    <input type="submit" value="SUBMIT">
+                                    <small>*We Never Send Spam</small>
+                                </div>
+                                <div class="col-md-3  wow fadeInRight">
+                                    <h6>Have Questions?</h6>
+                                    <h5><a href="tel:+1-800-213-1309"><i class="fas fa-phone"></i> +1-800-213-1309</a></h5>
+                                    <h5><a href="mailto:info@fareexpeditions.com"><i class="fas fa-envelope"></i> info@fareexpeditions.com</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer-band-nav visible-on-desktop">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 wow fadeInUp" data-wow-delay=".5s">
+                                    <h6>International Airlines</h6>
+                                    <ul>
+                                        <li><a href="#">British Airways Flights</a></li>
+                                        <li><a href="#">Lufthansa Flights</a></li>
+                                        <li><a href="#">Air Canada Flights</a></li>
+                                        <li><a href="#">Etihad Airways Flights</a></li>
+                                        <li><a href="#">Japan Airlines Flights</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 wow fadeInUp" data-wow-delay="1s">
+                                    <h6>Domestic Airlines</h6>
+                                    <ul>
+                                        <li><a href="#">United Airlines Flights</a></li>
+                                        <li><a href="#">Frontier Flights</a></li>
+                                        <li><a href="#">JetBlue Flights</a></li>
+                                        <li><a href="#">Spirit Flights</a></li>
+                                        <li><a href="#">Sun Country Airlines Flights</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 wow fadeInUp" data-wow-delay="1.5s">
+                                    <h6>Special Deals</h6>
+                                    <ul>
+                                        <li><a href="#">Affordable Flights</a></li>
+                                        <li><a href="#">Last Minute Deals</a></li>
+                                        <li><a href="#">Military Fares</a></li>
+                                        <li><a href="#">Senior Travel Deals</a></li>
+                                        <li><a href="#">Student Flights</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 wow fadeInUp" data-wow-delay="2s">
+                                    <h6>Dominical Islands</h6>
+                                    <ul>
+                                        <li><a href="#">Flights to Punta Cana</a></li>
+                                        <li><a href="#">Flights to Playa Dorada</a></li>
+                                        <li><a href="#">Flights to Santo Domingo</a></li>
+                                        <li><a href="#">Flights to Lake Enriquillo</a></li>
+                                        <li><a href="#">Flights to Eastern National Park</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="certications wow fadeInRight" data-wow-delay="1s"><img src="assets/images/certifications.jpg" width="514" height="35" alt=""></div>
+                            </div>
+                            <div class="row wow fadeInRight" data-wow-delay="1.5s">
+                                <ul class="list-inline">
+                                    <li>Important Links  -</li>
+                                    <li><a href="#">Home</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">About US</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">Best Price</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">FAQ'S</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">Sitemap</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                                <ul class="list-inline">
+                                    <li>Legal  Links  -</li>
+                                    <li><a href="#">Cancellation Fee</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li>/</li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="pull-left">Copyright © 2017- 2018 Fare Expeditions . All rights reserved</div>
+            <div class="pull-right">{+}  DISCLAIMER</div>
+            <div class="clearfix"></div>
+        </div>
+    </footer>
+</body>
+</html>

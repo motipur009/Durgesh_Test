@@ -1,0 +1,99 @@
+﻿/*Sticky Header*/
+.float-panel {
+    width:100%;
+    background:none;
+    z-index:300;
+    padding:15px 0; 
+    transform: translateZ(0);
+    transition:all 0.5s;
+	border-bottom:2px solid rgba(255,255,255,0.1);
+}
+.float-panel .content-area {
+    max-width:96%;
+    margin:10px auto;
+}
+.float-panel a {
+    font:normal 13px/35px 'proxima_nova_altbold';
+    text-decoration:none;
+    color:#fff;
+    display:inline-block;
+    padding:10px;
+	text-transform: uppercase
+}
+.float-panel a:hover{color:#cd3333}                  
+.float-panel .fa-gg {                  
+    color:#F0595C;
+    font-size:30px;
+    vertical-align:middle;                  
+    transition:all 1s;                  
+}
+.fixed {
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);  
+    padding:15px 0;
+    animation:slide-down 0.3s;
+    opacity:1.0;
+	background: #000;
+}                  
+.fixed .fa-gg {                  
+    transform: rotate(360deg);      
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+}
+/*Back to Top*/
+#backtop {
+	        position: fixed;
+            left:auto;right: 20px;top:auto;bottom: 20px;
+	        outline: none;
+            overflow:hidden;
+            color:#fff;
+            text-align:center;
+            background-color:rgba(0,0,0,0.84);
+            height:40px;
+            width:40px;
+            line-height:40px;
+            font-size:14px;
+            border-radius:2px;
+            cursor:pointer;
+            transition:all 0.3s linear;
+            z-index:999999;
+
+            opacity:1;
+            display:none;
+        }
+        #backtop:hover {
+            background-color:#e79520;
+			color: #000
+        }
+        #backtop.mcOut {
+            opacity:0;
+        }
+/*Sticky Footer Starts here*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding:0;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 50px;
+  margin-top: -50px;
+  background:#000;
+  line-height:50px;
+  font-size:13px;
+  color:#fff;
+}
+/*Sticky Footer ends here*/
